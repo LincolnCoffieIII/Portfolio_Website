@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/62d4255146.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="PNG_files/Logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact Me!</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm Lincoln</h1>
+            </div>
+        </div>
+    </div>
+ <!-- ABOUT -------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 about-photo">
+                    <img src="PNG_files/file 4.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a dedicated and self-motivated full stack developer, I possess a robust foundation in both front-end and back-end technologies. My expertise includes proficiency in HTML, CSS, JavaScript, Python, and Ruby on Rails, enabling me to build seamless, responsive, and dynamic web applications. In addition to my full stack skills, I have experience integrating AI solutions, leveraging machine learning algorithms, and developing intelligent systems that enhance user experience and drive business value. I am skilled in database management, RESTful API development, and cloud deployment, ensuring end-to-end project execution. My continuous learning mindset and hands-on experience with modern frameworks and tools position me to deliver innovative solutions effectively. I thrive in collaborative environments and am committed to contributing to impactful and transformative projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer</span><br>Designing Full stack web applications</li>
+                            <li><span>Front End Developement</span><br>HTML, CSS, Javascript</li>
+                            <li><span>Back End Developement</span><br>Python, Ruby on Rails, Django, Flask</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Present</span><br>Designing Full stack web applications while working at Apex Systems as a T3 Senior Moderator </li>
+                            <li><span>2020 - 2021</span><br>Program specialist, Help Desk/IT, MDVIP</li>
+                            <li><span>2016 - 2019</span><br>Senior Sales Rep, Licensed Property and casualty Salesman, Allstate</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2012 - 2014</span><br>Pre-Medicine at St. Johns University</li>
+                            <li><span>2016 - 2018</span><br>Nassau Community College</li>
+                            <li><span>2022 - 2023</span><br>Central Texas College</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- --------------------------Services ---------------------------------------->
+ <div id="Services">
+    <div class="container">
+        <h1>My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-mug-saucer"></i>
+                <h2>Web Development</h2>
+                <p>Full Stack Development: Building comprehensive web applications using front-end and back-end technologies. Front-End Development: Crafting responsive and interactive user interfaces with HTML, CSS, and JavaScript frameworks.Back-End Development: Developing robust server-side logic, database management, and API integrations using Python, Ruby on Rails, and other technologies.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mug-hot"></i>
+                <h2>AI and Machine Learning</h2>
+                <p>Expertise in AI and machine learning, implementing algorithms and AI solutions to enhance application functionalities, conducting data analysis to drive decision-making, and creating intelligent systems for automation and predictive analytics</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud Services</h2>
+                <p>Additionally, I offer cloud services such as deploying applications on platforms like AWS, Google Cloud, or Azure, and implementing CI/CD pipelines, automation, and containerization with tools like Docker and Kubernetes.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-users-gear"></i>
+                <h2>Consulting and Additional Services</h2>
+                <p>My consultancy and support services include providing expert advice on technology stack, system architecture, and best practices, as well as offering ongoing maintenance, updates, and troubleshooting for web applications. I also develop and optimize e-commerce solutions, create and integrate APIs for seamless data exchange, and enhance website visibility and search engine rankings through effective SEO strategies.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ------------------PortFolio --------------------->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="PNG_files/work-1.png" alt="">
+                <div class="layer">
+                    <h3>A final Project from my early days I am Proud of!</h3>
+                    <p>4 page website about some of my interests! </p>
+                    <a href="https://github.com/LincolnCoffieIII/ITNW1337-Final/tree/main"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="PNG_files/work-2.png" alt="">
+                <div class="layer">
+                    <h3>MY BLOG!!</h3>
+                    <p>4 page website about some of my interests! </p>
+                    <a href="https://github.com/LincolnCoffieIII/My-Blog"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="PNG_files/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Full Stack Web Application</h3>
+                    <p>This is my baby im working on her but I have push a bit of the code out! </p>
+                    <a href="https://github.com/LincolnCoffieIII/TAX-DEED-APP"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="PNG_files/work4.png" alt="">
+                <div class="layer">
+                    <h3>Full Stack Web Application</h3>
+                    <p> I love chess and thought I would feature that to show a bit of personality!</p>
+                    <a href="https://github.com/LincolnCoffieIII/Redid-the-bobby-fischer"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/LincolnCoffieIII" class="btn">See More</a>
+    </div>
+  </div>
+  <!----------------Contact Me!-------------------------->
+  <div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me!</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>  lincolncoffiejs@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> (917) - 365 - 5210</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/lincoln.coffie/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/LincolnCoffieIII"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lincoln-coffie-0b4685111/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@coffiecode"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="PNG_files/Coffie,L_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="6" placeholder="Your Message!"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Lincoln. <i class="fa-solid fa-shield-heart"></i> Made in 2024</p>
+    </div>
+  </div>
+	<script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyiy0uhksWFQdVzyaTqxYwxxkGjuBZT5rFHwEDh02tnjfTdNjUiyMgDY8-VJ4q8x5-w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+  </body>
+</html>
